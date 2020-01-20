@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Quiz!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <style type='text/css'>
+        #Qcard .btn {
+            display: block;
+            margin-bottom: 10px;
+
+        }
+    </style>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Overall Bootstrap Grid -->
+    <div class="container">
+
+        <!-- Jumbotron with Title -->
+        <div class="jumbotron">
+            <h1 class="text-center">
+                <strong>JavaScript Quiz!</strong>
+            </h1>
+            <hr>
+            <div class="text-center">
+                <button id='start' class="btn btn-warning btn-xs theme-button">
+                    <span class="fa fa-bolt"></span> Start Quiz</button>
+                <div id='timer' class="btn btn-dark btn-xs pause-button">
+                    <span class="fa fa-clock-o"></span></div>
+            </div>
+
+        </div>
+        <div class="row">
+
+            <div class="col-lg-12">
+
+                <!-- Controls (Superpower Grow/Shrink)-->
+                <!-- <div id="Qcard" class="card">
+                    <h4 class="card-header">QUESTION #</h4>
+                    <div class="card-body">
+                        <div class="text-center"> QUESTION QUESTINO ASDFAWEFCD
+                            <div>
+                                <button class="btn btn-primary btn-lg grow-button">
+                                    Answer 1</button>
+                                <button class="btn btn-primary btn-lg grow-button">
+                                    Answer 2</button>
+                                <button class="btn btn-primary btn-lg grow-button">
+                                    Answer 3</button>
+                                <button class="btn btn-primary btn-lg grow-button">
+                                    Answer 4</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="list-group" id="q-list-tab" role="tablist">
+                            <h4 class="card-header">QUESTION #</h4>
+                            <a class="list-group-item list-group-item-action active" id="list-Answer-1-list" data-toggle="list"
+                                 href="#list-home" role="tab" aria-controls="home">Answer 1</a>
+                            <a class="list-group-item list-group-item-action" id="list-Answer-2-list" data-toggle="list"
+                                href="#list-profile" role="tab" aria-controls="profile">Answer 2</a>
+                            <a class="list-group-item list-group-item-action" id="list-Answer-3-list" data-toggle="list"
+                                href="#list-messages" role="tab" aria-controls="messages">Answer 3</a>
+                            <a class="list-group-item list-group-item-action" id="list-Answer-4-list" data-toggle="list"
+                                href="#list-settings" role="tab" aria-controls="settings">Answer 4</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="list-group" id="list-correct" role="tablist">
+                                    <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                                        aria-labelledby="Correct-Response-list">Correct!</div>
+                                    <div class="tab-pane fade" id="list-incorrect" role="tabpanel"
+                                        aria-labelledby="Incorrect-Response-list">Wrong</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Right Card (Captain Planet Hero)
+      <div class="col-lg-6">
+
+         Captain Planet Image 
+        <img src="assets/captain-planet.jpg" alt="" class="img captain-planet" style="position:absolute; top:50px; left: 80px; z-index: -20; height: 300px">
+      </div>
+    </div>
+  </div> -->
+<!-- 
+                        <script>
+
+                            // JavaScript function that wraps everything
+                            $(document).ready(function () {
+
+                                var captainPlanet = $(".captain-planet");
+
+                                // Gets Link for Theme Song
+                                var audioElement = document.createElement("audio");
+                                audioElement.setAttribute("src", "assets/captainplanet24.mp3");
+
+                                // Theme Button
+                                $(".theme-button").on("click", function () {
+                                    audioElement.play();
+                                });
+                                $(".pause-button").on("click", function () {
+                                    audioElement.pause();
+                                });
+
+
+
+                            }
+    });
+  });
+
+                        </script> -->
+<script src= 'questions.js' > </script>
+<script src= 'script.js' > </script>
+
+
+                    </body>
+
+</html>
